@@ -390,3 +390,4 @@ If you use this software in academic research, please cite:
 - **v1.0.0** - Initial release with basic simulation and measurement capabilities
 - **v0.9.0** - Beta release with GPU acceleration support
 - **v0.8.0** - Alpha release with hardware interface implementation
+![FFF Temperature Distribution Analysis System Overview](docs/mesh_generator.png "mesh_generator Diagram")
