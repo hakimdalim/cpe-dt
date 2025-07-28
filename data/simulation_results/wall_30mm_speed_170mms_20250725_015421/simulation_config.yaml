@@ -1,0 +1,51 @@
+boundary_conditions:
+  ambient_temperature: 25.0
+  build_plate_temp: 60.0
+  convection_coefficient: 10.0
+  plate_contact_coeff: 100.0
+material:
+  ambient_temp: 25.0
+  density: 1250
+  deposition_temp: 175.0
+  name: PLA
+  specific_heat: 1800
+  thermal_conductivity: 0.13
+mesh:
+  dimension: 2D
+  element_size_x: 0.5
+  element_size_z: 0.2
+output:
+  monitoring_points:
+  - - 5.0
+    - 1.0
+  - - 15.0
+    - 2.0
+  - - 25.0
+    - 5.0
+  - - 7.5
+    - 0.2
+  - - 22.5
+    - 4.0
+  results_dir: data/parameter_study/wall_30mm_speed_170mms_20250725_015421
+  save_heat_flux: true
+  save_mesh: true
+  save_temperature_history: true
+  thermal_snapshots:
+    format: numpy
+    interval: 1.0
+printing:
+  nozzle_end_x: 30.0
+  nozzle_start_x: 0.0
+  print_direction: alternating
+simulation:
+  layer_height: 0.2
+  print_speed: 170.0
+  total_layers: 50
+  wall_length: 30.0
+  wall_thickness: 1.0
+solver:
+  max_time: 200.0
+  save_interval: 0.1
+  thermal_method: explicit
+  theta: 0
+  time_step: 0.001

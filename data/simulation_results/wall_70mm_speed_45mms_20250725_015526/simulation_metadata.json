@@ -1,0 +1,34 @@
+{
+  "simulation_parameters": {
+    "wall_length_mm": 70,
+    "wall_thickness_mm": 2.0,
+    "wall_height_mm": 10.0,
+    "print_speed_mm_per_s": 45,
+    "deposition_temp_celsius": 175.0,
+    "ambient_temp_celsius": 25.0
+  },
+  "mesh_info": {
+    "total_elements": 7000,
+    "total_nodes": 7191,
+    "element_size_x_mm": 0.5,
+    "element_size_z_mm": 0.2
+  },
+  "simulation_results": {
+    "final_time": 82.6740000000307,
+    "total_iterations": 82674,
+    "active_elements": 6995,
+    "total_elements": 7000,
+    "completion_percentage": 100.0,
+    "results_directory": "data/parameter_study/wall_70mm_speed_45mms_20250725_015526"
+  },
+  "timing": {
+    "wall_clock_time_seconds": 677.3222370147705,
+    "simulated_time_seconds": 82.6740000000307,
+    "speed_ratio": 0.12206007049821371
+  },
+  "files": {
+    "config_file": "data/parameter_study/wall_70mm_speed_45mms_20250725_015526\\simulation_config.yaml",
+    "results_directory": "data/parameter_study/wall_70mm_speed_45mms_20250725_015526"
+  },
+  "timestamp": "2025-07-25T02:06:43.757623"
+}
