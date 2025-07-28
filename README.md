@@ -16,7 +16,7 @@ This project implements a complete digital twin simulation for FFF 3D printing t
 
 ## Architecture Overview
 
-The codebase is structured into modular components:
+The codebase is in Script folder. It is structured into modular components:
 
 ```
 ├── Core Simulation Components
