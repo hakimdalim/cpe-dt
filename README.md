@@ -1,5 +1,5 @@
 # Task 02: Analysis of Temperature Distribution within a Printed Wall
-## Comprehensive Protocol and Simulation Framework
+## Protocol and Simulation Framework
 
 This repository contains the complete experimental protocol and simulation framework for analyzing temperature distribution during PLA (Polylactic Acid) 3D printing processes. The project combines physical thermal measurements with digital twin simulation for comprehensive validation and analysis.
 
