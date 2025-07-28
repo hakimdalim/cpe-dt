@@ -1,0 +1,52 @@
+# FFF Temperature Simulation Configuration
+
+simulation:
+  wall_length: 30.0           # mm (30 or 70)
+  wall_thickness: 2.0         # mm  
+  layer_height: 0.2           # mm
+  print_speed: 20.0           # mm/s
+  total_layers: 50            # number of layers to print (10mm total height)
+
+material:
+  name: "PLA"
+  thermal_conductivity: 0.13  # W/mK  
+  density: 1250               # kg/m³
+  specific_heat: 1800         # J/kgK
+  deposition_temp: 175.0      # °C (measured from experiments)
+  ambient_temp: 25.0          # °C
+
+mesh:
+  element_size_x: 0.5         # mm (along length) - smaller for better accuracy
+  element_size_z: 0.2         # mm (along height, should match layer_height)
+  dimension: "2D"             # "2D" or "3D"
+
+solver:
+  time_step: 0.001            # seconds - small for FE stability
+  max_time: 200.0             # seconds - maximum simulation time
+  save_interval: 0.1          # seconds - how often to save results
+  thermal_method: "implicit"  # Options: "explicit", "implicit", "theta"
+  theta: 1.0                  # 0=explicit, 0.5=Crank-Nicolson, 1=implicit
+
+output:
+  results_dir: "data/output"
+  save_mesh: true
+  save_temperature_history: true
+  save_heat_flux: true
+  monitoring_points:
+    - [5.0, 1.0]              # Near start, low layer
+    - [15.0, 2.0]             # Middle, medium layer  
+    - [25.0, 5.0]             # Near end, high layer
+  thermal_snapshots:
+    interval: 1.0             # seconds between temperature field snapshots
+    format: "numpy"           # "numpy" or "vtk"
+
+boundary_conditions:
+  ambient_temperature: 25.0   # °C
+  convection_coefficient: 10.0 # W/m²·K (typical for air)
+  build_plate_temp: 60.0      # °C (if modeling heated bed)
+  plate_contact_coeff: 100.0  # W/m²·K (good thermal contact)
+
+printing:
+  nozzle_start_x: 0.0         # mm
+  nozzle_end_x: 30.0          # mm (should match wall_length)
+  print_direction: "alternating" # "forward", "backward", "alternating"
