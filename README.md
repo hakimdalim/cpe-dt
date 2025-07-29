@@ -1,5 +1,5 @@
 # Task 02: Analysis of Temperature Distribution within a Printed Wall
-## Comprehensive Protocol and Simulation Framework
+## Protocol and Simulation Framework
 
 This repository contains the complete experimental protocol and simulation framework for analyzing temperature distribution during PLA (Polylactic Acid) 3D printing processes. The project combines physical thermal measurements with digital twin simulation for comprehensive validation and analysis.
 
@@ -142,7 +142,7 @@ python run_fff_simulation.py --wall_length 30 --print_speed 20
 
 ### Experimental Considerations
 - **MLX90640 Warm-up**: 180-second stabilization period before data collection
-- **Camera Distance**: 15-20 cm from build plate for optimal field-of-view
+- **Camera Distance**: 6-7 cm from build plate for optimal field-of-view
 - **Broken Pixel Handling**: Temperatures >180°C replaced with NaN values
 - **Temperature Filtering**: Valid range 25-230°C for PLA printing
 
@@ -256,19 +256,6 @@ opencv-python>=4.5.0  # Image processing
 - 3D printer with accessible hotend
 - USB connections for data acquisition
 
-## Research Applications
-
-### Academic Objectives
-- Validate computational models against experimental measurements
-- Understand heat transfer mechanisms in FFF processes
-- Optimize printing parameters for thermal management
-- Develop digital twin capabilities for additive manufacturing
-
-### Industrial Applications
-- Quality control in 3D printing processes
-- Print parameter optimization
-- Thermal monitoring system development
-- Process validation and certification
 
 ## Troubleshooting
 
@@ -282,15 +269,12 @@ opencv-python>=4.5.0  # Image processing
 - **Memory Usage**: Reduce mesh resolution for large problems
 - **Physics Validation**: Compare material properties with literature
 
-## Citation and Contact
-
-### Publication Reference
-When using this work, please cite the associated research and acknowledge the CPE Laboratory:
+## Contact
 
 **Institution**: Lehrstuhl für Computational Physics in Engineering (CPE)  
 **University**: RPTU Kaiserslautern  
 **Address**: Gottlieb-Daimler-Straße, Gebäude 74, 67663 Kaiserslautern, Germany  
-**Email**: cpe-sekretariat@mv.rptu.de
+**Email**: dalim@rptu.de
 
 ### Contributors
 - **Students**: Yating Wei, Hakim Dalim, Yahya Badine
