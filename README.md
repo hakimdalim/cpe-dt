@@ -117,7 +117,7 @@ material:
 ### 1. Hardware Setup
 - **Thermal Camera**: MLX90640 (24×32 pixel array)
 - **Interface**: ESP32 microcontroller with I2C communication
-- **3D Printer**: Standard FDM printer with PLA filament
+- **3D Printer**: Prusa MK4 printer with PLA filament
 - **Data Acquisition**: USB serial at 921600 baud
 
 ### 2. Calibration Process
